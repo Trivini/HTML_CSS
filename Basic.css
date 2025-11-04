@@ -1,0 +1,26 @@
+h3{
+    color: red;
+}
+
+p{
+    color: blue;
+}
+
+div{
+    border: 2px solid black;
+    padding: 10px;
+}
+.contents{
+    font-family: 'Courier New', Courier, monospace;
+}
+.about-LMS{
+    color: aqua;
+}
+#java image{
+    width: 200px;
+    alignment-baseline:central ;
+}
+
+#button{
+    background-color: blue;
+}
