@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>User Information</h3>
+    <p>Id:<span id ="user-id"></span></p>
+    <p>Name:<span id ="user-name"></span></p>
+    <p>Age:<span id ="user-age"></span></p>
+    <p>Email:<span id ="user-email"></span></p>
+    <p>Phone:<span id ="user-phone"></span></p>
+    <p>Address:<span id ="user-address"></span></p>
+    <button onclick="getUserInfo()">GET-INFO</button>
+    <script>
+        function getUserInfo(){
+            var user ={
+                id:1,
+                name: "Shraddha",
+                age: 25,
+                email:'shraddha@gmail.com',
+                phone:12345675,
+                address: 'pune'
+
+            };
+
+            document.getElementById('user-id').innerHTML=user.id;
+            document.getElementById('user-name').innerHTML=user.name;
+            document.getElementById('user-age').innerHTML=user.age;
+            document.getElementById('user-email').innerHTML=user.email;
+            document.getElementById('user-phone').innerHTML=user.phone;
+            document.getElementById('user-address').innerHTML=user.address;
+        }
+    </script>
+    
+</body>
+</html>
