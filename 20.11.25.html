@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var counter = 0;
+        counter++;  //counter = counter+1;
+
+        counter++;  //counter = counter+1;
+
+        counter++;
+        counter++;
+
+        counter--;  //counter = counter-1;
+
+        console.log("Counter : ",counter)
+
+        var users=[
+            "Sakshi Shinde",
+            "Shraddha Shinde",
+            "Sushant Shinde",
+            "Pradnya Shinde",
+            "Prashant Shinde",
+            'Yash Shinde'
+        ];
+
+        var i =0;
+
+        console.log("User 1 : ",users[i]);
+        i++;
+        console.log("User 2 : ",users[i]);
+        i++;
+        console.log("User 3 : ",users[i]);
+        console.log("User 4 : ",users[3]);
+        console.log("User 5 : ",users[4]);
+        console.log("User 6 : ",users[5]);
+
+        var marks =[10,20,30,40];
+
+        var totalMarks = 0;
+
+        totalMarks += marks[0]; //totalMarks = totalMarks +marks[0];
+
+        totalMarks += marks[1];//totalMarks = totalMarks +marks[1];
+        totalMarks += marks[2];//totalMarks = totalMarks +marks[2];
+        totalMarks += marks[3];//totalMarks = totalMarks +marks[3];
+
+        console.log("Total Marks : ",totalMarks);
+
+        var timer = 60;
+
+        // setInterval (function(){
+        //     timer -= 1;
+        //     console.log("Remaining Seconds : ",timer);
+
+        // },1000);
+
+
+        var email = "support@digital.ai";
+
+        var dbmail = "support@digital.ai";
+
+        var result = email == dbmail;
+
+        console.log(result);
+
+        //balance comparision
+
+        var currentBalance = 70000;
+        var dbCurrentBalance = "70000";
+
+        var result = currentBalance === dbCurrentBalance;
+
+        console.log(result);
+
+
+        //password comparision
+
+        var enteredPassword = 'Test@!23';
+        var dbPassword = 'Test@!23';
+
+        var result = enteredPassword != dbPassword;
+
+        console.log(result);
+
+        //Total Marks
+
+        var totalMarks = 450;
+
+        var dbTotalMarks = "450";
+
+        var result = totalMarks !== dbTotalMarks;
+        console.log(result);
+
+
+        var result = (email==dbmail) ? "Email Matched":"Email not Matched";
+        console.log(result);
+
+
+        var isAccountActivated = true;
+        var result = "Account " + (isAccountActivated ? "Activated" : "Not Activated");
+        console.log(result);
+
+        isAccountActivated = !isAccountActivated;
+        console.log(isAccountActivated);
+
+
+
+
+      
+       
+    </script>
+</body>
+</html>
