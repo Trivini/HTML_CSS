@@ -8,18 +8,52 @@
 <body>
     <script>
         var userInfo = {
-            name : "Sakshi",
+            firstName : "Sakshi",
+            lastName : "Shinde",
             email : 'sakshis8767@gmail.com',
-            mobiles : "+91-8767697554",
+            mobile : "+91-8767697554",
             password : "welcome@123"
         };
 
         var email_entered = 'sakshis8767@gmail.com';
         var entered_Password = "welcome@123"
+        var enter_mobile = "+91-8767697554";
 
-        var result = (email_entered===userInfo.email) && (entered_Password===userInfo.password)
+        var result = (email_entered===userInfo.email) && (entered_Password===userInfo.password) ? "Valid email and password":"Invalid email and password";
 
         console.log(result);
+
+        //Logical OR
+
+        var result = email_entered === userInfo.email || enter_mobile === userInfo.mobile;
+
+        console.log(result)
+
+        //Logical NOT
+        var isLoggedIn = true;
+
+        isLoggedIn = !isLoggedIn;
+
+        console.log(isLoggedIn);
+
+        //default parameter
+
+     function getUserInfo(firstName = '',lastName = ''){
+        var fullName = firstName +' '+lastName;
+        console.log('fullName = '+fullName);
+
+     }
+     getUserInfo();
+
+
+     let username = 'Amit@2121';
+
+     const deviceName = 'Apple Watch';
+
+     username = 'Lokesh2020';
+
+     deviceName = 'Macknook Pro';
+        
     </script>
 </body>
 </html>
