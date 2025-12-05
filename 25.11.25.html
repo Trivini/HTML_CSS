@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .username{
+            color: green;
+        }
+        .selected-page{
+            background-color: rgba(151, 213, 216, 0.8);;
+            color :rgb(44, 214, 226)
+
+        }
+    </style>
+</head>
+<body>
+
+    <h2 id = "username"></h2>
+
+    <ul>
+        <li onclick="switchPage('creating-a-react-app') "id = "creating-a-react-app">Creating React App</li>
+        <li onclick="switchPage('build-a-react-app-from-scratch') "id ="build-a-react-app-from-scratch">Build a React App from Scratch</li>
+        <li onclick="switchPage('add-react-to-existing-project') " id = "add-react-to-existing-project">Add React to existing project</li>
+    </ul>
+    <script>
+        document.getElementById('username').innerHTML ="Karthi2025";
+
+        var username = 'Sakshi@2003';
+        var password = 'Sakshi@2003';
+
+        const user = {
+        username: "sakshi123",
+        password: "Pass@123",
+        email: "sakshi@gmail.com",
+        role: "admin"
+    };
+
+        if(username === user.username && password === user.password){
+            console.log("Both username and password is Valid");
+        }else{
+            console.log("Invalid username and password")
+        }
+
+
+        //based on the marks we can assign grade
+        var marks = 90;
+        var assignGrade = '';
+
+        if(marks >= 90){
+            assignGrade = "A+";
+        }else if(marks >= 80){
+            assignGrade = "A";
+        }else if(marks >= 70){
+            assignGrade = "B";
+        }else if(marks >= 60){
+            assignGrade = "C";
+        }else if(marks >= 40){
+            assignGrade = "D";
+        }else{
+            console.log("Failed")
+        }
+
+        console.log("Assigned Grade : "+assignGrade);
+
+        document.getElementById('username').classList.add("username");
+
+        function switchPage(pageName){
+            document.getElementById('creating-a-react-app').classList.remove('selected-page');
+            document.getElementById('build-a-react-app-from-scratch').classList.remove('selected-page');
+            document.getElementById('add-react-to-existing-project').classList.remove('selected-page');
+
+            
+            if(pageName ==='creating-a-react-app' ){
+                document.getElementById('creating-a-react-app').classList.add('selected-page');
+
+            }else if(pageName ==='build-a-react-app-from-scratch'){
+                document.getElementById('build-a-react-app-from-scratch').classList.add('selected-page');
+            }else{
+                document.getElementById('add-react-to-existing-project').classList.add('selected-page');
+            }
+        }
+
+        var purchaseAmount = 4800;
+        var membershipType = 'premium';
+
+        var disscountAmount = 0;
+
+        if(purchaseAmount >= 5000){
+            if(membershipType === 'premium'){
+                disscountAmount = purchaseAmount - (20*purchaseAmount)/100;
+            }else{
+                disscountAmount = purchaseAmount - (10*purchaseAmount)/100;
+            }
+        }else if(purchaseAmount >= 2000 && purchaseAmount <5000){
+            if(membershipType = 'premium'){
+                disscountAmount = purchaseAmount - (10*purchaseAmount)/100;
+            }else{
+                disscountAmount = purchaseAmount - (10*purchaseAmount)/100;
+            }
+        }else{
+            disscountAmount = purchaseAmount;
+        }
+
+        console.log(disscountAmount)
+
+
+
+    </script>
+</body>
+</html>
