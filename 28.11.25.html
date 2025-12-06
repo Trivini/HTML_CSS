@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Statements</title>
+</head>
+<body>
+    <script>
+        var i = 0;
+
+        while(i < 5){
+            console.log("Iterate Numbers are : "+i);
+            i++;
+        }
+
+        const users = [
+            {id : 1, name:"Sakshi", age : 23, email : "sakshi@gmail.com"},
+            {id : 2, name:"Pradnya", age : 25, email : "pradnya@gmail.com"},
+            {id : 3, name:"Shraddha", age : 26, email : "shraddha@gmail.com"}
+
+    ];
+
+    var j = 0;
+    while(j < users.length){
+        console.log("User", j+1,users[j]);
+        j++;
+    }
+
+    while(false){
+        console.log("In while loop");
+
+    }
+
+
+    //Ask the user util they enter correct value
+
+    let age;
+    do{
+        age = prompt("Enter your age(must be a number)");
+    }while(isNaN(age));
+
+
+    console.log("Valid age enterd : ",age);
+
+
+    do{
+        console.log("In, do while loop");
+    }while(false);
+
+
+    for(var k = users.length-1 ; k >= 0 ; k--){
+        console.log("User : ",users[k]);
+    }
+
+    const employees = [
+    {
+    id: 101,
+    name: "Sakshi Shinde",
+    email: "sakshi@example.com",
+    role: "Developer",
+    salary: 45000
+    },
+
+    {
+    id: 102,
+    name: "Muskan Patil",
+    email: "muskan@example.com",
+    role: "Tester",
+    salary: 38000
+    },
+
+    {
+        id: 103,
+        name: "Sneha Kulkarni",
+        email: "sneha@example.com",
+        role: "HR",
+        salary: 42000
+    },
+
+    {
+        id: 104,
+        name: "Trivini Shinde",
+        email: "trivini@example.com",
+        role: "Intern",
+        salary: 15000
+    },
+
+    {
+        id: 105,
+        name: "Radhika Pawar",
+        email: "radhika@example.com",
+        role: "Manager",
+        salary: 65000
+    }
+    ]
+
+    // for(let key in employee){
+    //     console.log(key+":", employee[key]);
+    // }
+
+    for(let i = 0 ; i<employees.length ; i++){
+        let employee = employees[i];
+        console.log("Employee : ",i+1);
+        console.log("---------------------------");
+        for(let key in employees){
+            console.log(key,employees[key]);
+        }
+    }
+
+
+
+    </script>
+</body>
+</html>
